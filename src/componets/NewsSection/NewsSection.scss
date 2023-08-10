@@ -1,0 +1,28 @@
+@import "../../css-config/mixins.scss";
+.NewsSection {
+  width: 90%;
+  padding: 2rem;
+  margin: 5rem auto;
+  border-radius: 5px;
+  overflow: hidden;
+  height: fit-content;
+  background-color: white;
+  @include md {
+    width: 1280px;
+  }
+  h1 {
+    margin-bottom: 4rem;
+    font-size: 24px;
+    font-family: gilroy-bold;
+    color: rgba(0, 0, 0, 0.8);
+  }
+  .NewsSectionInner {
+    display: grid;
+    row-gap: 1rem;
+    @include md {
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      grid-template-rows: auto auto;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+@import "../../css-config/mixins.scss";
+.PopularBrand {
+  width: 90%;
+  padding: 2rem;
+  margin: 5rem auto;
+  border-radius: 5px;
+  overflow: hidden;
+  height: fit-content;
+  background-color: white;
+  @include md {
+    width: 1280px;
+  }
+  .PopularBrandInner {
+    display: grid;
+    grid-auto-flow: column;
+    overflow-x: auto;
+    gap: 2.5rem;
+  }
+  h1 {
+    margin-bottom: 2rem;
+    font-size: 24px;
+    font-family: gilroy-bold;
+    color: rgba(0, 0, 0, 0.8);
+  }
+}

@@ -1,0 +1,82 @@
+#featured {
+  padding: 7rem 0;
+  width: 1250px;
+  margin: 0 auto;
+  /* background-color: #0b0a0be9; */
+}
+
+#featured h2 {
+  font-family: gilroy-bold;
+  font-size: 2.5rem;
+  color: rgba(0, 0, 0, 0.8);
+  margin-bottom: 3rem;
+}
+
+#collections {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  grid-template-rows: auto auto auto;
+}
+
+#collections a {
+  text-decoration: none;
+}
+
+.item {
+  height: 29rem;
+  width: calc(1);
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.anime__image1 {
+  position: absolute;
+  height: 20rem;
+  top: 40%;
+  left: 15%;
+  border-radius: 10px;
+  transform: rotateZ(-10deg);
+}
+
+.anime__image2 {
+  position: absolute;
+  top: 45%;
+  left: 35%;
+  height: 20rem;
+  border: 5px solid #2f2f2f;
+  border-radius: 10px;
+  z-index: 1;
+}
+
+.anime__image3 {
+  position: absolute;
+  top: 55%;
+  left: 55%;
+  border-radius: 10px;
+  z-index: 1;
+  height: 20rem;
+  border: 5px solid #2f2f2f;
+  transform: rotateZ(10deg);
+}
+
+#featured .item h2 {
+  color: white;
+  font-size: 2rem;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+@media (max-width: 450px) {
+  #collections {
+    display: grid;
+    grid-auto-flow: column;
+    overflow-x: auto;
+    gap: 2.5rem;
+  }
+}
