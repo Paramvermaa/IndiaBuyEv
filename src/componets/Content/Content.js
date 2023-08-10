@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Content = () => {
   return (
     <div className="content">
-      <h1 className="content__title">India Buy Ev</h1>
+      <h1 className="content__title">India Buy EV</h1>
       <p className="content__summary">Don't Just Dream About It,</p>
       <p className="content__summary">Buy It</p>
       <div className="content__contact">
